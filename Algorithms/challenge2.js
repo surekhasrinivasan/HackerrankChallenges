@@ -20,8 +20,7 @@
 
 // We print the sum of the array's elements: 1 + 2 + 3 + 4 + 10 + 11 = 31 .
 
-var
-
+var 
 'use strict';
 
 const fs = require('fs');
