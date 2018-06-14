@@ -64,15 +64,27 @@ function birthdayCakeCandles(ar) {
     var highest = 0;
     var counter = 0;
     
-    for (var i = 0; i < ar.length; i++)
-        {
-            if (ar[i] > highest){
-                highest = ar[i];
+    //using forEach()
+    ar.forEach(function(element)
+            {
+            if (ar[element] > highest){
+                highest = ar[element];
                 counter = 1;
-            }else if (ar[i] === highest){
+            }else if (ar[element] === highest){
                 counter++;
             }
-     }
+     });
+    
+    //using for loop
+    // for (var i = 0; i < ar.length; i++)
+    //     {
+    //         if (ar[i] > highest){
+    //             highest = ar[i];
+    //             counter = 1;
+    //         }else if (ar[i] === highest){
+    //             counter++;
+    //         }
+    //  }
     return counter;
 }
 
